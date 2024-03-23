@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const { translate } = require('./translate');
 
 const app = express();
-const PORT = 9000;
+const PORT = process.env.PORT || 9000;
 
 app.use(bodyParser.json());
 
